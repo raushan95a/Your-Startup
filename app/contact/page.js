@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      
+
       {/* HERO */}
       <section className="bg-brand-light-blue py-16 px-[5%] pt-32">
         <div className="max-w-6xl mx-auto">
@@ -247,214 +247,214 @@ export default function Contact() {
   )
 }
 
-  return (
-    <>
-      <Header />
-      
-      {/* Hero */}
-      <section className="bg-brand-light-blue py-12 px-4 pt-20">
-        <div className="container">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Let's talk about your project</h1>
-          <p className="text-brand-text-muted max-w-2xl">
-            Tell us what you're working on and we'll get back to you within 24 hours. No sales pitch — just an honest conversation about whether we can help.
-          </p>
-        </div>
-      </section>
+return (
+  <>
+    <Header />
 
-      {/* Content */}
-      <section className="py-16 px-4">
-        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Form */}
-          <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Your name *</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="e.g. Ravi Sharma"
-                  required
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                />
-              </div>
+    {/* Hero */}
+    <section className="bg-brand-light-blue py-12 px-4 pt-20">
+      <div className="container">
+        <h1 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Let's talk about your project</h1>
+        <p className="text-brand-text-muted max-w-2xl">
+          Tell us what you're working on and we'll get back to you within 24 hours. No sales pitch — just an honest conversation about whether we can help.
+        </p>
+      </div>
+    </section>
 
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Business name</label>
-                <input
-                  type="text"
-                  name="business"
-                  value={formData.business}
-                  onChange={handleChange}
-                  placeholder="e.g. Sharma Electronics"
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                />
-              </div>
+    {/* Content */}
+    <section className="py-16 px-4">
+      <div className="container grid grid-cols-1 lg:grid-cols-3 gap-12">
+        {/* Form */}
+        <div className="lg:col-span-2">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Your name *</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="e.g. Ravi Sharma"
+                required
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              />
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Phone number *</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                />
-                <p className="text-xs text-brand-text-muted mt-1">We'll WhatsApp you to confirm</p>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Business name</label>
+              <input
+                type="text"
+                name="business"
+                value={formData.business}
+                onChange={handleChange}
+                placeholder="e.g. Sharma Electronics"
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              />
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Email address *</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="you@yourbusiness.com"
-                  required
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                />
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Phone number *</label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              />
+              <p className="text-xs text-brand-text-muted mt-1">We'll WhatsApp you to confirm</p>
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">What do you need? *</label>
-                <select
-                  name="need"
-                  value={formData.need}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                >
-                  <option value="">Select an option</option>
-                  <option value="website">Website development</option>
-                  <option value="app">Mobile app</option>
-                  <option value="custom">Custom software</option>
-                  <option value="advice">Not sure yet — need advice</option>
-                  <option value="other">Something else</option>
-                </select>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Email address *</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="you@yourbusiness.com"
+                required
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              />
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Tell us about your project</label>
-                <textarea
-                  name="project"
-                  value={formData.project}
-                  onChange={handleChange}
-                  placeholder="Even a rough idea is fine"
-                  rows="5"
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                ></textarea>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-brand-dark mb-2">Budget range</label>
-                <select
-                  name="budget"
-                  value={formData.budget}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
-                >
-                  <option value="">Select a range</option>
-                  <option value="under-50k">Under ₹50,000</option>
-                  <option value="50k-150k">₹50,000 – ₹1,50,000</option>
-                  <option value="150k-500k">₹1,50,000 – ₹5,00,000</option>
-                  <option value="above-500k">₹5,00,000+</option>
-                  <option value="not-sure">Not sure yet</option>
-                </select>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-brand-soft-purple text-brand-dark font-medium rounded-lg hover:bg-opacity-90 transition"
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">What do you need? *</label>
+              <select
+                name="need"
+                value={formData.need}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
               >
-                Send message
-              </button>
+                <option value="">Select an option</option>
+                <option value="website">Website development</option>
+                <option value="app">Mobile app</option>
+                <option value="custom">Custom software</option>
+                <option value="advice">Not sure yet — need advice</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
 
-              {submitted && (
-                <div className="p-4 bg-green-100 text-green-700 rounded-lg text-sm">
-                  Thanks! We've received your message and will get back to you within 24 hours.
-                </div>
-              )}
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Tell us about your project</label>
+              <textarea
+                name="project"
+                value={formData.project}
+                onChange={handleChange}
+                placeholder="Even a rough idea is fine"
+                rows="5"
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              ></textarea>
+            </div>
 
-              <p className="text-xs text-brand-text-muted">We never share your details. You'll hear from us within 24 hours.</p>
-            </form>
+            <div>
+              <label className="block text-sm font-medium text-brand-dark mb-2">Budget range</label>
+              <select
+                name="budget"
+                value={formData.budget}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-brand-medium-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple"
+              >
+                <option value="">Select a range</option>
+                <option value="under-50k">Under ₹50,000</option>
+                <option value="50k-150k">₹50,000 – ₹1,50,000</option>
+                <option value="150k-500k">₹1,50,000 – ₹5,00,000</option>
+                <option value="above-500k">₹5,00,000+</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full px-6 py-3 bg-brand-soft-purple text-brand-dark font-medium rounded-lg hover:bg-opacity-90 transition"
+            >
+              Send message
+            </button>
+
+            {submitted && (
+              <div className="p-4 bg-green-100 text-green-700 rounded-lg text-sm">
+                Thanks! We've received your message and will get back to you within 24 hours.
+              </div>
+            )}
+
+            <p className="text-xs text-brand-text-muted">We never share your details. You'll hear from us within 24 hours.</p>
+          </form>
+        </div>
+
+        {/* Sidebar */}
+        <div className="space-y-8">
+          {/* Book a Call */}
+          <div className="bg-brand-light-blue border border-brand-medium-blue rounded-lg p-6">
+            <h3 className="font-bold text-brand-dark mb-2">Prefer a call?</h3>
+            <p className="text-sm text-brand-text-muted mb-4">Book a free 30-minute discovery call directly in our calendar. No back-and-forth needed.</p>
+            <button className="w-full px-4 py-2 border border-brand-soft-purple text-brand-dark font-medium rounded-lg hover:bg-brand-soft-purple hover:text-white transition">
+              Book a free call
+            </button>
           </div>
 
-          {/* Sidebar */}
-          <div className="space-y-8">
-            {/* Book a Call */}
-            <div className="bg-brand-light-blue border border-brand-medium-blue rounded-lg p-6">
-              <h3 className="font-bold text-brand-dark mb-2">Prefer a call?</h3>
-              <p className="text-sm text-brand-text-muted mb-4">Book a free 30-minute discovery call directly in our calendar. No back-and-forth needed.</p>
-              <button className="w-full px-4 py-2 border border-brand-soft-purple text-brand-dark font-medium rounded-lg hover:bg-brand-soft-purple hover:text-white transition">
-                Book a free call
-              </button>
-            </div>
-
-            {/* Contact Details */}
-            <div className="bg-brand-light-blue rounded-lg p-6">
-              <h3 className="font-bold text-brand-dark mb-4">Contact Details</h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-semibold text-brand-dark">Email</p>
-                  <p className="text-brand-text-muted">hello@yourstartup.com</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-brand-dark">WhatsApp</p>
-                  <p className="text-brand-text-muted">+91 98765 43210</p>
-                  <p className="text-xs text-brand-text-muted">Mon–Sat, 9am–7pm IST</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-brand-dark">Location</p>
-                  <p className="text-brand-text-muted">India</p>
-                </div>
+          {/* Contact Details */}
+          <div className="bg-brand-light-blue rounded-lg p-6">
+            <h3 className="font-bold text-brand-dark mb-4">Contact Details</h3>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-brand-dark">Email</p>
+                <p className="text-brand-text-muted">hello@yourstartup.com</p>
+              </div>
+              <div>
+                <p className="font-semibold text-brand-dark">WhatsApp</p>
+                <p className="text-brand-text-muted">+91 95765 549225</p>
+                <p className="text-xs text-brand-text-muted">Mon–Sat, 9am–7pm IST</p>
+              </div>
+              <div>
+                <p className="font-semibold text-brand-dark">Location</p>
+                <p className="text-brand-text-muted">India</p>
               </div>
             </div>
+          </div>
 
-            {/* FAQ */}
-            <div className="bg-brand-light-blue rounded-lg p-6">
-              <h3 className="font-bold text-brand-dark mb-4">FAQ</h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-semibold text-brand-dark mb-1">How much does a project cost?</p>
-                  <p className="text-brand-text-muted text-xs">Websites start around ₹30,000–₹60,000. Apps or custom software from ₹1,50,000.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-brand-dark mb-1">How long does it take?</p>
-                  <p className="text-brand-text-muted text-xs">Websites: 2–4 weeks. Apps/software: 6–12 weeks. We'll give you a clear timeline.</p>
-                </div>
+          {/* FAQ */}
+          <div className="bg-brand-light-blue rounded-lg p-6">
+            <h3 className="font-bold text-brand-dark mb-4">FAQ</h3>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-brand-dark mb-1">How much does a project cost?</p>
+                <p className="text-brand-text-muted text-xs">Websites start around ₹30,000–₹60,000. Apps or custom software from ₹1,50,000.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-brand-dark mb-1">How long does it take?</p>
+                <p className="text-brand-text-muted text-xs">Websites: 2–4 weeks. Apps/software: 6–12 weeks. We'll give you a clear timeline.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* What Happens Next */}
-      <section className="bg-brand-light-blue py-16 px-4">
-        <div className="container">
-          <h2 className="text-2xl font-bold text-brand-dark mb-8 text-center">What Happens Next</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {[
-              { step: '1', title: 'We read your message', desc: 'A real person on our team will read what you\'ve written before responding.' },
-              { step: '2', title: 'Within 24 hours', desc: 'We\'ll confirm receipt and suggest a time to talk.' },
-              { step: '3', title: 'Free 30-min call', desc: 'We ask questions about your business — no pressure, no pitch.' },
-              { step: '4', title: 'Get a proposal', desc: 'Clear scope, timeline, and cost within 2–3 business days.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg border-l-4 border-brand-soft-purple text-center">
-                <div className="bg-brand-soft-purple text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3 mx-auto">
-                  {item.step}
-                </div>
-                <h4 className="font-semibold text-brand-dark mb-2 text-sm">{item.title}</h4>
-                <p className="text-xs text-brand-text-muted">{item.desc}</p>
+    {/* What Happens Next */}
+    <section className="bg-brand-light-blue py-16 px-4">
+      <div className="container">
+        <h2 className="text-2xl font-bold text-brand-dark mb-8 text-center">What Happens Next</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          {[
+            { step: '1', title: 'We read your message', desc: 'A real person on our team will read what you\'ve written before responding.' },
+            { step: '2', title: 'Within 24 hours', desc: 'We\'ll confirm receipt and suggest a time to talk.' },
+            { step: '3', title: 'Free 30-min call', desc: 'We ask questions about your business — no pressure, no pitch.' },
+            { step: '4', title: 'Get a proposal', desc: 'Clear scope, timeline, and cost within 2–3 business days.' }
+          ].map((item, i) => (
+            <div key={i} className="bg-white p-6 rounded-lg border-l-4 border-brand-soft-purple text-center">
+              <div className="bg-brand-soft-purple text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mb-3 mx-auto">
+                {item.step}
               </div>
-            ))}
-          </div>
+              <h4 className="font-semibold text-brand-dark mb-2 text-sm">{item.title}</h4>
+              <p className="text-xs text-brand-text-muted">{item.desc}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
-      <Footer />
-    </>
-  )
+    <Footer />
+  </>
+)
 }
