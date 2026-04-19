@@ -143,10 +143,10 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-brand-medium-blue border-opacity-40 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-soft-purple bg-white"
                 >
                   <option value="">Select a range</option>
-                  <option value="under-50k">Under ₹50,000</option>
-                  <option value="50k-150k">₹50,000 – ₹1,50,000</option>
-                  <option value="150k-500k">₹1,50,000 – ₹5,00,000</option>
-                  <option value="above-500k">₹5,00,000+</option>
+                  <option value="under-50k">Under ₹10,000</option>
+                  <option value="50k-150k">₹10,000 – ₹50,000</option>
+                  <option value="150k-500k">₹50,000 – ₹1,00,000</option>
+                  <option value="above-500k">₹1,00,000+</option>
                   <option value="not-sure">Not sure yet</option>
                 </select>
               </div>
@@ -205,7 +205,7 @@ export default function Contact() {
               <div className="space-y-6 text-sm">
                 <div>
                   <p className="font-semibold text-brand-dark mb-2">How much does a website cost?</p>
-                  <p className="text-xs text-brand-text-muted leading-relaxed">Websites start at ₹25,000–₹60,000 depending on complexity. Custom software and apps are higher.</p>
+                  <p className="text-xs text-brand-text-muted leading-relaxed">Websites start at ₹10,000–₹60,000 depending on complexity. Custom software and apps are higher.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-brand-dark mb-2">How long will my project take?</p>
