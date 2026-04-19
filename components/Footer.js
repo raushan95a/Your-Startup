@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-brand-dark mb-4">Contact</h5>
             <p className="text-sm text-brand-text-muted mb-2">hello@yourstartup.com</p>
-            <p className="text-sm text-brand-text-muted">+91 98765 43210</p>
+            <p className="text-sm text-brand-text-muted">+91 95765 49225</p>
           </div>
         </div>
         <div className="border-t border-brand-medium-blue pt-8 flex flex-col md:flex-row items-center justify-between">
